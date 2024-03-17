@@ -1,0 +1,64 @@
+import java.util.*;
+import java.lang.Math;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    boolean bool=true;
+	    while(bool)
+	    {
+	    System.out.println("Enter the first number:");
+        int a=sc.nextInt();
+        System.out.println("Enter the second number:");
+        int b=sc.nextInt();
+        System.out.println("1. Addition:");
+        System.out.println("2. Subraction:");
+        System.out.println("3. Multiplication:"); 
+        System.out.println("4. Division:");
+        System.out.println("5. Modulo:");
+        System.out.println("6. Power:");
+        System.out.println("Enter the numbers for calculation");
+        int n=sc.nextInt();
+        
+        switch(n){
+            case 1:
+                System.out.println("Addition:" +(a+b));
+                break;
+            case 2:
+                System.out.println("Subraction:"+(a-b));
+                break;
+            case 3:
+                System.out.println("Multiplication:"+(a*b));
+                break;
+            case 4:
+                System.out.println("Division:"+(a/b));
+                break;
+            case 5:
+                System.out.println("Modulus:"+(a%b));
+                break;
+            case 6:
+                System.out.println("Power:"+(Math.pow(a,b)));
+                break;
+            default:
+                System.out.println("Invalid operation");
+                break;
+        }
+        System.out.println("Do you want to continue (0/1):");
+        int yn=sc.nextInt();
+        if(yn==0)
+        {
+            bool=false;
+            System.out.println("Thank You...!!!");
+        }
+        else if(yn==1)
+        {
+            bool=true;
+        }
+        else
+        {
+            System.out.println("Invalid");
+        }
+	    }
+	}
+}
+        
