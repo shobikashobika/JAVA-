@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    char input[100]; 
+    char characters[] = {'r','e','s'};
+    int i, j;
+    scanf("%s", input);
+    printf("The characters'r','e','s'");
+    for(i = 0; input[i] != '\0'; i++) {
+        for(j = 0; j < 3; j++) {
+            if(input[i] == characters[j]) {
+                printf("%c ", input[i]);
+                break; 
+            }
+        }
+    }
+    printf("\n");
+
+    return 0;
+}
+
+
