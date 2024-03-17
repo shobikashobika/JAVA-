@@ -1,0 +1,40 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a Birth : ");
+       int n = scanner.nextInt();
+        if(n<= 72) {
+       int a=n%8;
+      switch(a) {
+          case 1:
+             System.out.println("lower");
+             break;
+          case 2:
+            System.out.println ("middle");
+             break;
+          case 3:
+             System.out.println("upper");
+             break;
+           case 4:
+             System.out.println("lower");
+             break;
+          case 5:
+            System.out.println ("middle");
+             break;
+          case 6:
+             System.out.println("upper");
+             break;
+          case 7:
+             System.out.println("side lower");
+             break;
+          case 0:
+             System.out.println("side upper");
+             break;
+          }
+        }
+        System.out.println("invalid number");
+     }
+  } 
+
