@@ -1,0 +1,13 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	String str1 = "kitkat";
+	String str2 = "kitkat";
+	System.out.println(str1.startsWith(str2));
+	System.out.println(str1.endsWith(str2));
+	System.out.println(str1.contains(str2));
+	}
+}
+	
