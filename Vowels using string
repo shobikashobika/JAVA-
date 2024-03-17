@@ -1,0 +1,54 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s=new String();
+		s=sc.nextLine();
+		int a1=0;
+		int e=0;
+		int j=0;
+		int o=0;
+		int u=0;
+		char[] a=new char[s.length()];
+		for(int i=0;i<s.length();i++){
+		    a[i]=s.charAt(i);
+		  
+		      if(a[i]=='a'){
+		                a1++;
+		      }
+		  else if (a[i]=='e'){
+		                 e++;
+		  }
+             else if(a[i]=='i'){
+                          j++;
+             }
+              else if(a[i]=='o'){
+                          o++;
+              }
+              else if( a[i]=='u'){
+                         u++;
+              }
+		  }
+		
+		  
+		  if(a1>0){
+		      System.out.println("a");
+		  }
+		  if(e>0){
+		      System.out.println("e");
+		  }
+		  if(j>0){
+		      System.out.println("i");
+		  }
+		  if(o>0){
+		      System.out.println("o");
+		  }
+		  if(u>0){
+		      System.out.println("u");
+		  }
+	}
+		  
+		
+	
+	}
